@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*
+Lighter color: #D0B0B0;
+Darker color: #836464;
+gradient: white - #BC8F8F;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D0B0B0;
+    font-family: Tomorrow;
+    padding: 100px;
+    background: linear-gradient(to bottom right, #fff, #BC8F8F);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-width: 400px;
+    max-width: 500px;
+    border: 3px solid #BC8F8F;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
+    
+
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* HEADER */
+  .container__hero {
+    background-color: #D0B0B0;
+
+    display: flex;  
+    flex: 0 1 200px;
+  }
+  .container img{
+    width: 100%;
+    display: block;
+  }
+
+  #timeStamp {
+    font-family: Roboto;
+    position: absolute;
+    color: #fff;
+    font-size: 4rem;
+    margin-left: 5px;
+    margin-top: 220px;
+  } 
+  #date {
+    font-family: Roboto;
+    font-size: 2rem;
+    position: absolute;
+    color: #fff;
+    margin-top: 290px;
+    margin-left: 10px;
+  }
+
+
+
+  /* SEARCH TODOS */
+ .container__input {
+    flex: 0 1 100px;
+    color: #fff;
+    background:linear-gradient(to bottom left, #fff, #BC8F8F);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.form {
+  color: #836464;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+  .form input {
+    border: 2px solid #BC8F8F;
+    color: #BC8F8F;
+    padding: 0 1rem;
+    font-size: 16;
+
+
+    width: 250px;
+    height: 30px;
+  }
+
+  .form label {
+    padding-bottom: .75rem;
+    color: #BC8F8F;
+  }
+
+   #add {
+     color: #BC8F8F;
+   }
+
+  /* LIST OF TODOS */
+
+
+  .container__list {
+    flex: 0 1 300px;
+    color: #BC8F8F;
+    background: white;
+    overflow:hidden;
+    overflow-y:scroll;
+  }
+  .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #BC8F8F;
+      padding: 20px;
+  }
+  
+  .delete:hover {
+    cursor: pointer;
+  }
+
+
+  .filtered {
+    display: none !important;
+  }
+
+
